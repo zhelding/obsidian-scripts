@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "outDir": "dist",
+        "target": "es6",
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "noImplicitReturns": true,
+        "strict": true,
+    },
+    "include": ["./src/**/*"],
+}

@@ -1,0 +1,20 @@
+{
+  "name": "obsidian-scripts",
+  "version": "0.1.0",
+  "main": "manage_status.js",
+  "author": "Zoe Helding",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/moment": "2.13.0",
+    "@types/node": "^17.0.34",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "metaedit": "github:chhoumann/MetaEdit#1.7.2",
+    "obsidian": "^0.14.8"
+  }
+}
