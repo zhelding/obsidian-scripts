@@ -25,7 +25,7 @@ const statusString: string = 'status';
 const waitingString: string = 'waiting';
 const startedString: string = 'started';
 const waitingSinceString: string = 'waiting-since';
-const doneString: string = 'done';
+const completedString: string = 'completed';
 
 const {
   createYamlProperty,
@@ -98,7 +98,7 @@ async function deleteStatus(): Promise<void> {
     statusString,
     startedString,
     waitingSinceString,
-    doneString,
+    completedString,
   ];
 
   await deleteProperties(propertiesToDelete);
@@ -138,9 +138,9 @@ async function setStatusWaiting(): Promise<void> {
   await setProperty(waitingSinceString, getDateString());
 }
 
-async function setStatusDone(): Promise<void> {
-  await setStatus('done');
-  await setProperty(doneString, getDateString());
+async function setStatusCompleted(): Promise<void> {
+  await setStatus(completedString);
+  await setProperty(completedString, getDateString());
 }
 
 export {
@@ -149,5 +149,5 @@ export {
   setStatusTodo,
   setStatusInProgress,
   setStatusWaiting,
-  setStatusDone,
+  setStatusCompleted,
 };
